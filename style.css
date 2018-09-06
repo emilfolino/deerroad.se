@@ -18,6 +18,7 @@ h1 {
 
 h2 {
   font-size: 2.4rem;
+  line-height: 1.4;
 }
 
 p {
@@ -82,9 +83,26 @@ p {
 }
 
 .megafon {
-  padding-top: 8rem;
-  font-size: 7rem;
+  padding-top: 6rem;
+  font-size: 6rem;
   font-style: italic;
+}
+
+.footer-column {
+  padding: 0.8rem;
+}
+
+@media (max-width: 1024px) {
+  .megafon {
+    padding-top: 2rem;
+    font-size: 5rem;
+  }
+
+  .inner-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 
 @media (max-width: 667px) {
@@ -101,11 +119,13 @@ p {
     font-size: 4rem;
     font-style: italic;
   }
+}
 
-  .inner-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+@media (max-width: 400px) {
+  .megafon {
+    padding-top: 2rem;
+    font-size: 3rem;
+    font-style: italic;
   }
 }
 
